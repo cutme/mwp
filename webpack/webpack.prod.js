@@ -70,6 +70,7 @@ module.exports = {
         createHappyPlugin('scss', ['css-loader?importLoaders:1!postcss-loader?sourceMap:1!sass-loader']),
         
         plugins.js,
+        plugins.jQuery,
         
 /*
         new HtmlCriticalPlugin({

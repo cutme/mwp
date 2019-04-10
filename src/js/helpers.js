@@ -1,5 +1,7 @@
 import ScrollToPlugin from 'gsap/ScrollToPlugin';
 
+const plugins = [ ScrollToPlugin ];
+
 (function(window, document, cutme, undefined) {
 
     const Helpers = function() {
