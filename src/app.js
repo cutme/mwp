@@ -16,6 +16,13 @@ require('./js/nav.js');
 
 //require('./js/ismobile.js');
 
+/*
+
+require('./img/assets/logo-mwp.svg')
+require('./img/assets/logo-mwp-2.svg')
+require('./img/assets/logo-mwp--white.svg')
+require('./img/assets/logo-mwp-2--white.svg')
+*/
 
 require('./img/assets/logo-mwp.svg')
 require('./img/assets/logo-mwp-2.svg')
