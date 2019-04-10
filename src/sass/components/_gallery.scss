@@ -1,0 +1,28 @@
+.c-gallery {
+    @extend %flex;
+    @extend %flex-wrap;
+    width: 100%;
+    padding-top: 40px;
+    
+    @media screen and ( min-width: $tablet_portrait + 1px ) {
+        width: calc(100% + 70px);
+        margin: 0 -35px;
+    }
+    
+    @media screen and ( max-width: $tablet_portrait + px ) {
+        width: calc(100% + 20px);
+        margin: 0 -10px;
+    }
+
+    &__item {
+        width: grid(375, 1250);
+        margin: 0 grid(16, 1250) 50px grid(16, 1250);
+        
+        @media screen and ( max-width: $tablet_portrait + px ) {
+            width: 50%;
+            padding: 0 10px;
+            margin: 0 0 25px 0;
+        }
+    }
+    
+}

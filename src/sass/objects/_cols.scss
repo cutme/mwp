@@ -1,0 +1,6 @@
+.o-cols {
+    
+    @media screen and ( min-width: $tablet_portrait + 1px ) {
+        display: flex;
+    }
+}

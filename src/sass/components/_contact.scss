@@ -1,0 +1,13 @@
+.c-contact {
+    background-color: $c-blue1;
+
+    .o-article {
+        a {
+            @extend %ulink;
+            
+            &:before, &:after {
+                background-color: white;
+            }
+        }
+    }
+}

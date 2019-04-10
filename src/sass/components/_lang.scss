@@ -1,0 +1,43 @@
+.c-lang {
+    @extend %flex;
+    font-size: rem(14);
+    
+    @media screen and ( min-width: $tablet + 1px ) {
+        margin-left: 100px;
+    }
+    
+    @media screen and ( min-width: $tablet_portrait + 1px ) and ( max-width: $tablet + px ) {
+        margin-left: 50px;
+    }
+    
+    @media screen and ( max-width: $tablet_portrait + px ) {
+        justify-content: center;
+    }
+    
+    li {
+        @extend %rel;
+        padding: 0 10px;
+        text-transform: uppercase;
+
+        &:not(:last-of-type) {
+            &:after {
+                @extend %abs;
+                @extend %abs-after;
+                top: 0; right: 0;
+                width: 1px; height: 100%;
+                background-color: white;
+                
+                .home & {
+                    background-color: $c-blue1;
+                }
+            }
+        }
+    }
+    
+    .current-menu-item {
+    
+        a {
+            font-weight: $bold;
+        }
+    }
+}

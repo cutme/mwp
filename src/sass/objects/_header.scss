@@ -1,0 +1,60 @@
+.o-header {
+    font-weight: $bold;
+    margin-bottom: .8em;
+
+    &--first {
+        font-size: rem(72); 
+        
+        @media screen and ( max-width: $base + 80px ) {
+            font-size: get-vw-1180(72); 
+        }
+        
+        @media screen and ( max-width: $tablet_portrait + px ) {
+            font-size: rem(48);
+        }
+        
+        @media screen and ( max-width: $smartphone_portrait + px ) {
+            font-size: rem(32);
+        }
+    }
+    
+    &--second {
+        font-size: rem(48); 
+        
+        @media screen and ( max-width: $base + 80px ) {
+            font-size: get-vw-1180(48); 
+        }
+        
+        @media screen and ( max-width: $tablet_portrait + px ) {
+            font-size: rem(32);
+        }
+    }
+    
+    &--third {
+        font-size: rem(36); 
+        
+        @media screen and ( max-width: $base + 80px ) {
+            font-size: get-vw-1180(36); 
+        }
+        
+        @media screen and ( max-width: $tablet_portrait + px ) {
+            font-size: rem(24);
+        }
+    }
+    
+    &--fourth {
+        font-size: rem(24);
+        
+        @media screen and ( max-width: $base + 80px ) {
+            font-size: get-vw-1180(24); 
+        } 
+        
+        @media screen and ( max-width: $tablet_portrait + px ) {
+            font-size: rem(18);
+        }
+    }
+    
+    &--fiveth {
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,54 @@
+.o-article {
+
+    p {
+        margin-bottom: 1.5em;
+        
+        & + ul {
+            margin-top: -1em;
+        }
+    }
+    
+    ul {
+        margin-bottom: 1.5em;
+        
+        li {
+            @extend %rel;
+            padding-left: 30px;
+            
+            &:before {
+                @extend %abs;
+                @extend %abs-after;
+                left: 0; top: 6px;
+                font: {
+                    family: $icomoon;
+                    size: rem(18);
+                }
+                content: "\e904";
+                
+                @media screen and ( max-width: $tablet + px ) {
+                    font-size: rem(14);
+                }
+            }
+        }
+    }
+    
+    .o-header {
+        &--first,
+        &--fourth {
+            margin-bottom: .5em;
+        }
+    }
+    
+    &--columns {
+        @media screen and ( min-width: $smartphone + 1px ) {
+            column-count: 2;
+            column-gap: 40px;
+        }
+    }
+    
+    &--regular {
+        p {
+            font-weight: $regular;
+        }
+    }
+}

@@ -1,0 +1,115 @@
+button, input, textarea {
+	background-color: transparent;
+	border: none;
+	border-color: inherit;
+	border-radius: 0;
+	font-family: $text;
+	color: inherit;
+}
+
+button {
+	cursor: pointer;
+}
+
+input, textarea {
+	width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+	text-rendering: optimizeLegibility; 
+	
+	font: {
+		family: $text;
+	}
+	cursor: text;
+	color: inherit;
+}
+
+input {
+	&[disabled],
+	&[readonly] {
+		opacity: .5;
+	}
+}
+
+input {
+	&[type=text],
+	&[type=email],
+	&[type=tel] {
+		width: 100%;
+	}
+}
+
+textarea {
+	overflow: auto;
+}
+
+:invalid {
+  box-shadow: none;
+}
+
+:-moz-submit-invalid {
+  box-shadow: none;
+}
+
+:-moz-ui-invalid {
+  box-shadow:none;
+}
+
+::-webkit-input-placeholder {color: rgba($c-black1, .5);}
+:-moz-placeholder {color: rgba($c-black1, .5); }
+::-moz-placeholder {color: rgba($c-black1, .5); }
+:-ms-input-placeholder { color: rgba($c-black1, .5); }
+
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font: {
+        size: rem(14);
+        weight: $regular;
+    }
+}
+
+.form-field {
+    @extend %anim;
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    padding: 0 20px;
+    color: $c-blue1;
+    
+    .has-error & {
+        background-color: $c-red1;
+        color: white;
+    }
+    
+    &:focus {
+        background-color: white;
+    }
+}
+
+textarea.form-field {
+    padding: 20px;
+    height: 130px;
+}
+
+.form-row {
+    @extend %flex;
+    @extend %flex-wrap;
+    width: 100%;
+    margin-bottom: 20px;
+    
+    &--submit {
+        .o-btn {
+            margin: 0 0 0 auto;
+        }
+    }
+}
+
+.form-group {
+    @extend %flex;
+}
+
+
+

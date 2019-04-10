@@ -1,0 +1,13 @@
+.c-offer {
+    
+    .o-cols {
+        &__item {
+            &:first-of-type {
+                @media screen and ( min-width: $tablet_portrait + 1px ) {
+                    width: 400px;
+                    padding-right: 100px;
+                }
+            }            
+        }
+    }
+}

@@ -1,0 +1,79 @@
+.c-references {
+
+    .glide {
+        position: static;
+        margin-bottom: 40px;
+
+        &__slide {
+            transition: opacity 1s;
+            height: auto;
+            opacity: 0;
+            
+            &--active {
+                opacity: 1;
+            }
+        }
+    }
+    
+    blockquote {
+        @extend %rel;
+        padding-left: 120px;
+        
+        @media screen and ( max-width: $slider + px ) {
+            padding-left: get-vw-1400(120); 
+        }
+        
+        @media screen and ( max-width: $tablet_portrait + px ) {
+            padding-left: 50px;
+        }
+        
+        &:before {
+            @extend %abs;
+            @extend %abs-after;
+            left: 0; top: 5px;
+            font: {
+                family: $icomoon;
+                size: rem(50);
+            }
+            content: "\e902";
+            
+            @media screen and ( max-width: $slider + px ) {
+                font-size: get-vw-1400(50); 
+            }
+            
+            @media screen and ( max-width: $tablet_portrait + px ) {
+                font-size: rem(18);
+            }
+        }      
+    }
+    
+    p {
+        font-size: rem(48);
+        
+        @media screen and ( max-width: $slider + 80px ) {
+            font-size: get-vw-1400(48); 
+        }
+        
+        @media screen and ( max-width: $tablet_portrait + px ) {
+            font-size: rem(24);
+        }
+    }
+    
+    .o-header {
+        &--first {
+            margin-bottom: 1em;
+        }
+    }
+    
+    .o-wrap {
+        width: 1400px;
+        
+        @media screen and ( min-width: $tablet_portrait + 1px ) {
+            padding: 0 110px;
+        }
+        
+        @media screen and ( max-width: $slider + px ) {
+            width: 100%;
+        }
+    }
+}

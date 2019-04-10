@@ -1,0 +1,80 @@
+.c-footer {
+    background-color: $c-blue1;
+    color: white;
+
+    .o-cols {
+        @extend %flex-spacebetween;
+
+        &__item {
+            &:first-of-type {
+            
+                @media screen and ( max-width: $tablet_portrait + px ) {
+                    margin-bottom: 40px;
+                }
+    
+                img {
+                    margin-bottom: 20px;
+                    
+                    @media screen and ( max-width: $tablet_portrait + px ) {
+                        margin: 0 auto 20px auto;
+                    }
+                }
+        
+                p {
+                    margin-bottom: 1em;
+                    font: {
+                        size: rem(18);
+                        weight: $regular;
+                    }
+                    
+                    @media screen and ( max-width: $tablet_portrait + px ) {
+                        text-align: center;
+                    }
+                    
+                    @media screen and ( max-width: $smartphone + px ) {
+                        font-size: rem(14);
+                    }
+                }
+            }
+        }
+    }
+    
+    .c-nav {
+
+        @media screen and ( max-width: $tablet_portrait + px ) {
+            display: none;
+        }
+    
+        a {
+            font-size: rem(18);
+        }
+        
+        .current-menu-item {
+            a {
+                border: none;        
+            }
+        }
+    }
+    
+    .logo {
+
+        &--home {
+            display: none;
+
+            .home & {
+                display: block;
+            }
+        }
+        
+        &--subsite {
+            .home & {
+                display: none;
+            }
+        }
+    }
+    
+    .home & {
+        background-color: white;
+        color: $c-blue1;
+    }
+}

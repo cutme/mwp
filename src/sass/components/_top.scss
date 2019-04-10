@@ -1,0 +1,152 @@
+.c-top {
+    @include z-index(top);
+    @extend %anim;
+    position: fixed;
+    left: 0; top: 0;
+    width: 100%; height: 120px;
+    background-color: $c-blue1;
+    color: white;
+    transform: translate3d(0, -100%, 0);
+    opacity: 0;
+    
+    @media screen and ( max-width: $tablet + px ) {
+        height: 60px;
+    }
+
+    .o-wrap {
+        @extend %flex;
+        @extend %flex-y;
+        @extend %flex-spacebetween;
+        height: 100%;
+    }
+    
+    .o-logo {
+        @extend %rel;
+        display: block;
+        width: 84px;
+        height: 55px;
+        
+        @media screen and ( max-width: $tablet + px ) {
+            height: 30px;
+        }
+        
+        img {
+            @extend %abs;
+            @extend %anim;
+            left: 0; top: 0;
+        }
+
+        .simple {
+            opacity: 0;
+            
+            @media screen and ( max-width: $tablet + px ) {
+                opacity: 1;
+            }
+        }
+        
+        .full {
+            @media screen and ( max-width: $tablet + px ) {
+                opacity: 0;
+            }
+        }
+        
+        
+    }
+    
+    &__nav {
+        @extend %flex;
+        @extend %flex-y;
+        
+        & > .c-lang {
+            @media screen and ( max-width: $tablet_portrait + px ) {
+                display: none;
+            }
+        }
+    }
+
+    &__logo {
+
+        &--home {
+            display: none;
+
+            .home & {
+                display: block;
+            }
+        }
+        
+        &--subsite {
+            .home & {
+                display: none;
+            }
+        }
+    }
+
+    &.is-narrow {
+        height: 60px;
+        
+        .o-logo {
+            height: 30px;
+        }
+        
+        .full {
+            opacity: 0;
+        }
+        
+        .simple {
+            opacity: 1;
+        }
+    }
+    
+    .home & {
+        background-color: white;
+        color: $c-blue1;
+    }
+    
+    .is-loaded & {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+    
+    .c-nav {
+        @media screen and ( max-width: $tablet_portrait + px ) {
+            transform: translate3d(100%, 0, 0);
+            opacity: 0;
+            padding: 40px 0;
+            
+            &.is-visible {
+                transition: all 250ms ease-out;
+                transform: translate3d(0, 0, 0);
+                opacity: 1;
+            }
+            display: flex;
+            position: fixed;
+            left: 0; top: 0;
+            
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            
+            width: 100%; height: 100vh;
+            background-color: white;
+            overflow: auto;
+            
+            ul {
+                &:not(.c-lang) {
+                    text-align: center;
+                    
+                    li {
+                        padding: 5px;
+                    }
+                    
+                    a {
+                        font-size: rem(22);
+                    }
+                }
+            }
+            
+            .c-lang {
+                width: 100%;
+            }
+        }
+    }
+}

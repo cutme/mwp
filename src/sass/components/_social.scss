@@ -1,0 +1,53 @@
+.c-social {
+    @extend %flex;
+    justify-content: flex-end;
+    
+    
+    @media screen and ( min-width: $tablet_portrait + 1px ) {
+        margin: 40px 0;
+    }
+    
+    @media screen and ( max-width: $tablet_portrait + px ) {
+        justify-content: center;
+    }
+    
+    li {
+        margin: 0 15px;
+        
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    
+    [class^="icon-"] {
+        @extend %anim;
+        @extend %flex;
+        @extend %flex-xy;
+        width: 34px; height: 34px;
+        border: 2px solid white;
+        font-size: rem(20);
+        
+        &:hover {
+            background-color: white;
+            color: $c-blue1;
+                
+            .home & {
+                background-color: $c-blue1;
+                color: white;
+            }
+        }
+        
+        .home & {
+            border-color: $c-blue1;
+        }
+    }
+    
+    .icon-youtube {
+        font-size: rem(16);
+    }
+    
+    .icon-instagram {
+        padding-left: 1px;
+    }
+    
+}

@@ -1,0 +1,383 @@
+<% include ./src/includes/head %>
+
+<body class="home" style="overflow: hidden;">
+    <% include ./src/includes/cover %>
+
+
+    <% include ./src/includes/top--home %>
+
+
+    <div class="o-container">
+
+        <div class="c-homeslider">
+            <div class="glide" id="homeCarousel">
+                <div class="glide__track" data-glide-el="track">
+
+                    <ul class="glide__slides">
+                        <li class="glide__slide" style="background-image: url(<%= require('./img/photos/bg_rotator_1.jpg') %>);">
+                            <div class="o-wrap">
+                                <div class="holder">
+                                    <div class="big">
+                                        <p>rozwiązania w&nbsp;dziedzinie automatyki przemysłowej i&nbsp;sterowania.</p>
+                                    </div>
+                                    
+                                    <div class="small">
+                                        <p>Linie przesyłowe, stacje transformatorowe, rozdzielnice SN, nn, obiektowe, instalacje budynkowe
+</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="glide__slide" style="background-image: url(<%= require('./img/photos/bg_rotator_2.jpg') %>);">
+                            <div class="o-wrap">
+                                <div class="holder">
+                                    <div class="big">
+                                        <p>rozwiązania w&nbsp;projektów technologicznych i&nbsp;wielobranżowych</p>
+                                    </div>
+                                    
+                                    <div class="small">
+                                        <p>Projekty budowlane, projekty wykonawcze, nadzory, analizy, ekspertyzy</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="icon-arrow-left glide__arrow glide__arrow--left" data-glide-dir="<"></button>
+                        <button class="icon-arrow-right glide__arrow glide__arrow--right" data-glide-dir=">"></button>
+                    </div>
+                    
+                    <div class="glide__bullets" data-glide-el="controls[nav]">
+                        <button class="glide__bullet" data-glide-dir="=0"></button>
+                        <button class="glide__bullet" data-glide-dir="=1"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="c-article" id="start">
+            <div class="o-section o-section--dots anim anim--up">
+                <div class="o-wrap">
+                
+                    <div class="o-cols">
+                        <div class="o-cols__item">
+                            <article class="o-article">
+                                <h3 class="o-header o-header--first">witaj.</h3>
+                                
+                                <p>Jesteśmy młodą firmą zajmująca się projektowaniem i doradztwem technicznym. Specjalizujemy się głównie w&nbsp;projektach elektryki i automatyki przemysłowej. Nasze doświadczenie wywodzi się z firm obecnych w przemyśle, gdzie standardy wykonania i pewność działania są najważniejsze.</p>
+                            </article>
+                            
+                            <a href="offer.html" class="o-btn o-btn--blue">Sprawdź naszą ofertę</a>
+                        </div>
+                        
+                        <div class="o-cols__item">
+                            <div class="o-frame o-frame--big">
+                                <img src=<%= require("./img/photos/welcome.jpg") %> alt="" width="620" height="413">
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+
+
+        <div class="c-offer" id="offer">
+            <div class="o-section o-section--blue anim anim--up">
+                <div class="o-wrap">                
+                
+                    <div class="o-cols">
+                        <div class="o-cols__item">
+                            <article class="o-article">
+                                <h3 class="o-header o-header--first">liczby i&nbsp;fakty.</h3>
+                            </article>
+                        </div>
+                        
+                        <div class="o-cols__item">
+                            <div class="c-stats">
+                                <div class="c-stats__item">
+                                    <p class="num">
+                                        <span class="js-count" data-count="13"></span>
+                                    </p>
+                                    
+                                    <p class="info">lat doświadczenia projektantów</p>
+                                </div>
+                                
+                                <div class="c-stats__item">
+                                    <p class="num">
+                                        <span class="js-count" data-count="50"></span>
+                                    </p>
+                                    
+                                    <p class="info">średnio projektów rocznie</p>
+                                </div>
+                                
+                                <div class="c-stats__item">
+                                    <p class="num">
+                                        <span class="js-count" data-count="1234"></span>
+                                    </p>
+                                    
+                                    <p class="info">projektów zrealizowanych</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                    
+        
+        <div class="c-experience" id="experience">
+            <div class="o-section o-section--dots anim anim--up" >
+                <div class="o-wrap">
+                
+                    <article class="o-article">
+                        <h3 class="o-header o-header--first">doświadczenie.</h3>
+                        
+                        <p>Wieloletnie doświadczenie zdobyte na obiektach pozwala nam tworzyć projekty dostosowane do konkretnego rozwiązania. Niecodzienne rozwiązania stosowane w dotychczasowych projektach sprawdzają się w zastosowaniu i są dowodem na to że nie ma rzeczy niemożliwych. Takie indywidualne podejście do klienta i problemu jest gwarancją zadowolenia klienta i sukcesu w realizacji jego zamierzenia.</p>
+                    </article>
+                    
+                    <ul class="c-experience__projects">
+                        <li class="c-experience__project">
+                            <a href="project.html" class="o-frame o-frame--small">
+                                <div class="o-frame__link">
+                                    <img src=<%= require("./img/photos/experience-1.jpg") %> alt="" width="320" height="213">
+                                </div>
+                            </a>
+                            
+                            <a href="project.html" class="o-article">
+                                <h3 class="o-header o-header--third">projekt #1</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </a>
+                        </li>
+                        
+                        <li class="c-experience__project">
+                            <a href="project.html" class="o-frame o-frame--small">
+                                <div class="o-frame__link">
+                                    <img src=<%= require("./img/photos/experience-2.jpg") %> alt="" width="320" height="213">
+                                </div>
+                            </a>
+                            
+                            <a href="project.html" class="o-article">
+                                <h3 class="o-header o-header--third">projekt #2</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </a>
+                        </li>
+                        
+                        <li class="c-experience__project">
+                            <a href="project.html" class="o-frame o-frame--small">
+                                <div class="o-frame__link">
+                                    <img src=<%= require("./img/photos/experience-3.jpg") %> alt="" width="320" height="213">
+                                </div>
+                            </a>
+                            
+                            <a href="project.html" class="o-article">
+                                <h3 class="o-header o-header--third">projekt #3</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <div class="c-experience__more">
+                        <a href="#" class="o-btn o-btn--blue">Zobacz więcej</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="c-references">
+            <div class="o-section o-section--blue anim anim--up">
+                <div class="o-wrap">
+                
+                    <h3 class="o-header o-header--first">referencje.</h3>
+                    
+                    <div class="glide" id="referencesCarousel">
+                        <div class="glide__track" data-glide-el="track">
+        
+                            <ul class="glide__slides">
+                                <li class="glide__slide">
+                                    <blockquote>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </blockquote>
+                                </li>
+                                
+                                <li class="glide__slide">
+                                    <blockquote>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </blockquote>
+                                </li>
+                                
+                                <li class="glide__slide">
+                                    <blockquote>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </blockquote>
+                                </li>
+                            </ul>
+                            
+                            <div class="glide__arrows" data-glide-el="controls">
+                                <button class="icon-arrow-left glide__arrow glide__arrow--left" data-glide-dir="<"></button>
+                                <button class="icon-arrow-right glide__arrow glide__arrow--right" data-glide-dir=">"></button>
+                            </div>
+                            
+                            <div class="glide__bullets" data-glide-el="controls[nav]">
+                                <button class="glide__bullet" data-glide-dir="=0"></button>
+                                <button class="glide__bullet" data-glide-dir="=1"></button>
+                                <button class="glide__bullet" data-glide-dir="=2"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="c-article" id="work">
+            <div class="o-section o-section--dots anim anim--up">
+                <div class="o-wrap">
+                
+                    <h3 class="o-header o-header--first">praca.</h3>
+                
+                    <div class="o-cols">
+                        <div class="o-cols__item">
+                            <article class="o-article">                                
+                                <p>Sprawdź nasze aktualne oferty. Może znajdziesz coś dla siebie?</p>
+
+                                <p>W przypadku chęci współpracy zachęcamy do kontaktu.</p>
+                            </article>
+                            
+                            <a href="work.html" class="o-btn o-btn--blue">Aktualne oferty pracy</a>
+                        </div>
+                        
+                        <div class="o-cols__item">
+                            <div class="o-frame o-frame--big">
+                                <img src=<%= require("./img/photos/work.jpg") %> alt="" width="620" height="413">
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="c-contact" id="contact">
+            <div class="o-section o-section--mwp anim anim--up">
+                <div class="o-wrap">
+                    <div class="c-article">
+                
+                        <h3 class="o-header o-header--second">kontakt.</h3>
+                    
+                        <div class="o-cols">
+                            <div class="o-cols__item">
+    
+                                <article class="o-article o-article--regular">
+                                    <p>
+                                    MWP-Projekt Marcin Paczyński
+                                    </p>
+    
+                                    <p>
+                                    ul. Robotnicza 72, lok. 228,<br>
+                                    53-608 Wrocław
+                                    </p>
+                                    
+                                    <p>
+                                    tel: +48 795 988 744
+                                    </p>
+                                    
+                                    <p>
+                                    web: www.mwp-projekt.pl<br>
+                                    e-mail: 
+    
+<script type="text/javascript">
+//<![CDATA[
+<!--
+var x="function f(x,y){var i,o=\"\",l=x.length;for(i=0;i<l;i++){if(i<49)y++;" +
+"y%=127;o+=String.fromCharCode(x.charCodeAt(i)^(y++));}return o;}f(\"TAX[NUQ" +
+".b\\\"n0c781 t?t5a|BN\\013\\nU\\022B\\002\\025\\034\\023\\002\\020V\\020Cno" +
+">pabaj9k:v~vjZu\\177y\\\\j7L\\016\\023\\020\\r\\004\\033\\023\\020\\000Q_^T" +
+"UW\\033\\014J\\010X\\036\\013[\\003DYZH^V\\027%h9>9#)5` w'a|u&nlbh=x{~#6qf$" +
+"s=7\\001\\023#\\027L\\014O\\\\\\025\\033\\017\\037\\031\\037\\000O\\037_\\0" +
+"01\\006\\026\\006\\002\\005PIV\\024\\020TE}g*!-=2+T+szw;<?LM& $IJ$()FGA),/|" +
+"}\\024\\023\\024yzr`\\030\\031\\033pqlqahopt\\007\\006\\007deda}V{d\\035\\0" +
+"17\\006pwu\\032\\033~yz\\027\\020zy~\\014\\rbcd\\t\\n*mjj\\007\\000',6\\025" +
+"\\016XX \\036\\000\\\\\\010\\021\\035\\020[Z_3,\\r\\016T\\014\\004\\0375\\0" +
+"27NKK !H11^_476[T<8;PQA;#!NO!%&KD**+@A*/\\020}~Mxy\\022\\027\\030uvn\\025s\\"+
+"031\\037\\000mn\\t\\033\\006O\\001QHC\\032\\035\\023\\003\\021wu-\\010\\027" +
+"\\033\\022\\005\\036\\025\\026\\027\\020\\030\\022mx7/h;u8%--?)!fwvKJ\\033K" +
+":L\\017O\\034(\\017\\017\\003.\\034\\016\\030\\022\\\\\\013\\\\\\020\\022\\" +
+"030;\\013\\033\\023?\\020\\021rg,djlts[4!d7:<>-4k(?>o> -&r4{wd\\t\\n\\tJ\\0" +
+"37I\\032N\\023\\031\\027B\\004_AI\\013YFTZPZ\\031@\\004V\\027`\\037b\\035}." +
+"n*d7'13`3g4e(o>>;'7;#1zp\",49)"                                              ;
+while(x=eval(x));
+//-->
+//]]>
+</script>
+    
+                                    </p>
+                                </article>                            
+                            </div>
+                            
+                            <div class="o-cols__item">
+                                <div class="c-contactform">
+                                    <h4 class="o-header o-header--fourth">Napisz do nas:</h4>
+                                    
+                                    <div class="o-frames o-frame--bigs">
+                                        <form action="#">
+                                            <div class="form-row">
+                                                <label class="form-label">imię</label>
+                                                <input type="text" class="form-field">
+                                            </div>
+                                            
+                                            <div class="form-row">
+                                                <label class="form-label">adres e-mail</label>
+                                                <input type="email" class="form-field">
+                                            </div>
+                                            
+                                            <div class="form-row">
+                                                <label class="form-label">nr telefonu (nieobowiązkowe)</label>
+                                                <input type="text" class="form-field js-digits">
+                                            </div>
+                                            
+                                            <div class="form-row">
+                                                <label class="form-label">treść wiadomości</label>
+                                                <textarea class="form-field"></textarea>
+                                            </div>
+                                            
+                                            <div class="form-row form-row--submit">
+                                                <button type="submit" class="o-btn o-btn--frame">
+                                                    <span>wyślij</span>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="o-wrap"> 
+                <div class="c-location">
+                    <div class="c-location__map is-loading js-map" data-lat="51.111723" data-lng="17.000188" data-marker=<%= require("./img/icons/marker-2.svg") %>></div>
+                    
+                    <div class="c-location__zoom">
+                        <div>
+                            <p>który budynek?<br> które drzwi?</p>
+                            
+                            <a href=<%= require("./img/assets/location.png") %> class="o-btn o-btn--blue js-image">Sprawdź</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <% include ./src/includes/footer--home %>
+    </div>
+        
+</body>
+</html>

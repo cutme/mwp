@@ -1,0 +1,37 @@
+.o-section {
+    @extend %rel;
+    padding: 60px 0 80px 0;
+    
+    @media screen and ( max-width: $tablet_portrait + px ) {
+        padding: 40px 0 60px 0;
+    }
+    
+    &--big {
+        padding: {
+            top: 100px;
+            bottom: 120px;
+        }
+    }
+    
+    &--blue {
+        background-color: $c-blue1;
+        color: white;
+    }
+    
+    &--dots {
+        background: {
+            image: url(../img/dot.svg);
+            size: 11px 11px;
+        }
+    }
+    
+    &--mwp {
+        background: {
+            image: url(../img/bg-mwp.svg);
+            size: contain;
+            position: center top;
+            color: $c-blue1;
+        }
+        color: white;
+    }
+}

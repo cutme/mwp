@@ -1,0 +1,42 @@
+.c-experience {
+
+    &__more {
+        text-align: center;
+    }
+
+    &__projects {
+        @extend %flex;
+        @extend %flex-spacebetween;
+        
+        @media screen and ( max-width: $tablet_portrait + px ) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    
+    &__project {
+        width: grid(340);
+        margin-bottom: 40px;
+        
+        @media screen and ( max-width: $tablet_portrait + px ) {
+            width: 50%;
+            padding: 0 10px;
+        }
+        
+        @media screen and ( max-width: $smartphone + px ) {
+            width: auto;
+            max-width: 340px;
+            padding: 0;
+        }
+    }
+
+    .o-frame {
+        margin-bottom: 40px;
+    }
+
+    .o-wrap {
+        & > .o-article {
+            margin-bottom: 80px;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.c-nav {
+    @include z-index(nav);
+    -webkit-overflow-scrolling: touch;
+    
+    @media screen and ( max-width: $tablet_portrait + px ) {
+        color: $c-blue1;
+    }
+
+    ul {
+        @media screen and ( min-width: $tablet_portrait + 1px ) {
+            display: flex;
+        }
+    }
+    
+    li {
+        padding: 0 25px;
+        
+        @media screen and ( max-width: $tablet + px ) {
+            padding: 0 10px;
+        }
+        
+        &:last-child {
+            padding-right: 0;
+        }
+        
+        &.current-menu-item {
+            a {
+                border-bottom: 2px solid $c-blue1;
+                font-weight: $black;
+            }
+        }        
+    }
+    
+    a {
+        @extend %ulink;
+        font-size: rem(16);
+
+        &:after, &:before {
+            background-color: white;
+            
+            .home & {
+                background-color: $c-blue1;
+            }
+        }
+    }
+    
+    .c-lang {
+        @media screen and ( min-width: $tablet_portrait + 1px ) {
+            display: none;
+        }
+    }
+}

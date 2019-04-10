@@ -1,0 +1,82 @@
+.o-frame {
+    @extend %rel;
+    display: block;
+    
+    &:before {
+        @extend %abs;
+        @extend %abs-after;
+        z-index: -1;
+        width: 100%; height: 100%;
+    }
+    
+    &__link {
+        display: block;
+        overflow: hidden;
+        
+        img {
+            transition: transform 1s;
+        	backface-visibility: hidden;
+        }
+        
+        &:hover {
+            img {
+                transform: scale3d(1.1,1.1,1);
+            }
+        }
+    }
+    
+    &--big {
+        margin: 0 0 30px 30px;
+        
+        @media screen and ( max-width: $base + 80px ) {
+            margin: 0 0 get-vw-1180(30) get-vw-1180(30);
+        }
+
+        &:before {
+            border: 15px solid $c-blue1;
+            transform: translate3d(-30px, 30px, 0);
+            
+            @media screen and ( min-width: $tablet_portrait + 1px ) and ( max-width: $base + 80px ) {
+                border-width: get-vw-1180(15); 
+                transform: translate3d(get-vw-1180(-30), get-vw-1180(30), 0);
+            }
+            
+            @media screen and ( max-width: $tablet_portrait + px ) {
+                border-width: 8px;
+                transform: translate3d(-16px, 16px, 0);
+            }
+        }
+    }
+    
+    &--small {
+        margin: 0 0 20px 20px;
+        
+        @media screen and ( max-width: $base + 80px ) {
+            margin: 0 0 get-vw-1180(20) get-vw-1180(20);
+        }
+        
+        @media screen and ( max-width: $tablet_portrait + px ) {
+            margin: 0 0 20px 20px;
+        }
+
+        &:before {
+            border: 10px solid $c-blue1;
+            transform: translate3d(-20px, 20px, 0);
+            
+            @media screen and ( min-width: $tablet_portrait + 1px ) and ( max-width: $base + 80px ) {
+                border-width: get-vw-1180(10);
+                transform: translate3d(-20px, 20px, 0);
+            }  
+            
+            @media screen and ( max-width: $tablet_portrait + px ) {
+                border-width: 8px;
+                transform: translate3d(-16px, 16px, 0);
+            } 
+            
+            @media screen and ( max-width: $smartphone_portrait + px ) {
+                border-width: 5px;
+                transform: translate3d(-10px, 10px, 0);
+            }          
+        }
+    }
+}

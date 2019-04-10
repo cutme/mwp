@@ -1,0 +1,13 @@
+.o-container {
+    @extend %anim;
+    padding-top: 120px;
+    opacity: 0;
+    
+    @media screen and ( max-width: $tablet + px ) {
+        padding-top: 60px;
+    }
+    
+    .is-loaded & {
+        opacity: 1;
+    }
+}
