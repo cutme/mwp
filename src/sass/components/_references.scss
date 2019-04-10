@@ -57,6 +57,10 @@
         @media screen and ( max-width: $tablet_portrait + px ) {
             font-size: rem(24);
         }
+        
+        @media screen and ( max-width: $smartphone_portrait + px ) {
+            font-size: rem(18);
+        }
     }
     
     .o-header {

@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded',function() {
         const glide = new Glide(home, {
             type: 'carousel',
             animationDuration: 600,
-            autoplay: false,
+            autoplay: 4000,
             hoverpause: true,
             gap: 0
         })
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded',function() {
         const glide = new Glide(references, {
             type: 'carousel',
             animationDuration: 600,
-            autoplay: false,
+            autoplay: 4000,
             hoverpause: true,
             gap: 0
         })
