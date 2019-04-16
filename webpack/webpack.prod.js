@@ -14,10 +14,12 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 console.log(process.env.NODE_ENV);
 
 const templateFileMapper = [
+                                {template: "./src/404.ejs", file: "404.html"},
                                 {template: "./src/index.ejs", file: "index.html"},
                                 {template: "./src/work.ejs", file: "work.html"},
                                 {template: "./src/offer.ejs", file: "offer.html"},
-                                {template: "./src/project.ejs", file: "project.html"}
+                                {template: "./src/project.ejs", file: "project.html"},
+                                {template: "./src/references.ejs", file: "references.html"}
                             ]
 
 

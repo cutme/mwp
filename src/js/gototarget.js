@@ -5,10 +5,12 @@ const enableBodyScroll = bodyScrollLock.enableBodyScroll;
 
 document.addEventListener('DOMContentLoaded',function() {
 
-    const btn = document.getElementsByClassName('js-goto');
-    
+    const btnGoTo = document.getElementsByClassName('js-goto');
+
     const hamburger = document.getElementsByClassName('js-hamburger')[0];
     const nav = document.getElementsByClassName('js-nav')[0];
+    
+    const navLi = nav.getElementsByTagName('li');
 
 	const speed_calculate = function (target) {
     	let base_speed  = 60,
@@ -55,8 +57,8 @@ document.addEventListener('DOMContentLoaded',function() {
 	        cutme.Helpers.scrollTo(target, speed_calculate(target), offset);
 	    }
 	    
-	    for (let i = 0; i < btn.length; i++) {
-            btn[i].classList.remove('current-menu-item');
+	    for (let i = 0; i < navLi.length; i++) {
+            navLi[i].classList.remove('current-menu-item');
         }
         
         that.classList.add('current-menu-item');
@@ -73,9 +75,9 @@ document.addEventListener('DOMContentLoaded',function() {
 	    e.preventDefault() ? e.preventDefault() : e.preventDefault = false;
 	};
 	
-    if (btn.length > 0) {
-        for (let i = 0; i < btn.length; i++) {
-            btn[i].addEventListener('click', clickAction);
+    if (btnGoTo.length > 0) {
+        for (let i = 0; i < btnGoTo.length; i++) {
+            btnGoTo[i].addEventListener('click', clickAction);
         }
     }
 

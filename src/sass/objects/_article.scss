@@ -1,5 +1,9 @@
 .o-article {
 
+    &--min {
+        min-height: 500px;
+    }
+
     p {
         margin-bottom: 1.5em;
         

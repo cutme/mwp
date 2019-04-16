@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (document.getElementsByClassName('js-image').length > 0) {
     
         let image = GLightbox({
-            selector: 'js-image'
+            selector: 'js-image',
+            touchNavigation: true
         });
     }
 

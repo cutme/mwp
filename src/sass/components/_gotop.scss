@@ -1,0 +1,23 @@
+.c-gotop {
+    @include z-index(gotop);
+    @extend %anim;
+    position: fixed;
+    right: 20px; bottom: 20px;
+    width: 102px; height: 106px;
+    background: {
+        image: url(../img/icons/arrow-up.svg);
+        repeat: no-repeat;
+        size: cover;
+    }
+    cursor: pointer;
+    transform: translate3d(0, 100%, 0) translate3d(0, 20px, 0);
+    
+    &.is-visible {
+        transform: translate3d(0,0,0);
+    }
+    
+    @media screen and ( max-width: $base + 80px ) {
+        width: get-vw-1180(102); 
+        height: get-vw-1180(106); 
+    }
+}

@@ -1,20 +1,5 @@
 .c-references {
 
-    .glide {
-        position: static;
-        margin-bottom: 40px;
-
-        &__slide {
-            transition: opacity 1s;
-            height: auto;
-            opacity: 0;
-            
-            &--active {
-                opacity: 1;
-            }
-        }
-    }
-    
     blockquote {
         @extend %rel;
         padding-left: 120px;
@@ -63,10 +48,22 @@
         }
     }
     
+    &__more {
+        @extend %abs;
+        left: 0;
+        bottom: 40px;
+        width: 100%;
+        text-align: center;
+    }
+    
     .o-header {
         &--first {
             margin-bottom: 1em;
         }
+    }
+    
+    .o-section {
+        padding-bottom: 140px;
     }
     
     .o-wrap {
@@ -78,6 +75,25 @@
         
         @media screen and ( max-width: $slider + px ) {
             width: 100%;
+        }
+    }
+
+    .glide {
+        position: static;
+        margin-bottom: 40px;
+
+        &__bullets {
+            bottom: 120px;
+        }
+
+        &__slide {
+            transition: opacity 1s;
+            height: auto;
+            opacity: 0;
+            
+            &--active {
+                opacity: 1;
+            }
         }
     }
 }

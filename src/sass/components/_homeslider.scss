@@ -151,6 +151,14 @@
     }
     
     .glide {
+         &__slides {
+            height: 100%;
+            
+            @media screen and ( max-width: $tablet_portrait + px ) {
+        height: auto;
+    }
+        }
+
         &__slide {
             background: {
                 size: cover;

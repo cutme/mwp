@@ -14,3 +14,10 @@
         opacity: 1;
     }
 }
+
+.glightbox-clean .gnext,
+.glightbox-clean .gprev {
+    @media (min-width: 0) {
+        top: 45% !important;
+    }
+}
